@@ -1,0 +1,39 @@
+public class Main {
+    public static void main(String[] args) {
+	  
+	 //Finding String duplicate in Array 
+            ArrayList<String> names = new ArrayList<>();
+            names.add("Navin");
+            names.add("Hyder");
+            names.add("Nitin");
+            names.add("Gopal");
+            names.add("iNeuron");
+            names.add("Gopal");
+            names.add("Navin");
+
+            Set<String> su = new HashSet<>();
+
+        for (String name:names)
+        {
+            if(su.add(name)==false)
+                System.out.println(name);
+        }
+
+        //Finding Integer duplicate in Array 
+        ArrayList<Integer> nums = new ArrayList<>();
+            nums.add(50);
+            nums.add(25);
+            nums.add(35);
+            nums.add(75);
+            nums.add(50);
+            nums.add(75);
+            nums.add(25);
+
+        Set<Integer> si = new HashSet<>();
+        for (Integer dup:nums)
+        {
+            if(si.add(dup)==false)
+                System.out.println(dup);
+        }
+}
+}
